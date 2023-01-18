@@ -9,7 +9,7 @@ function App() {
       timestamp: new Date()
     }
     // eslint-disable-next-line no-restricted-globals
-    parent.postMessage(JSON.stringify(message), '*');
+    window.ReactNativeWebView.postMessage(JSON.stringify(message), '*');
   }
 
   return (
